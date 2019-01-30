@@ -1,0 +1,24 @@
+
+package im;
+syntax = "proto3";
+message Message{
+    string version = 1;
+	string cmd = 2;
+    string sender = 3;
+    string receiver = 4;
+    string groupId = 5;
+    string platfrom = 6;
+    string type = 7;
+    string content = 8;
+    string sendTime = 9;
+    string deviceId = 10;
+    string token = 11;
+    string appKey = 12;
+    string sign = 13;
+    string flag = 14;
+    string extend1 = 15;
+    string extend2 = 16;
+    string extend3 = 17;
+    string extend4 = 18;
+    string byteContent = 19;
+}

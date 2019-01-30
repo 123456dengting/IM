@@ -1,0 +1,104 @@
+@import '~iview/src/styles/index.less';
+@import './reset.css';
+@import './variables.less';
+// 初始化样式
+input,button,select,textarea{outline:none}
+input:focus,button:focus,select:focus,textarea:focus{outline:none;box-shadow: none}
+
+
+
+
+
+
+/* 客服整体布局+菜单样式  start */
+.layout{
+    border: 1px solid #d7dde4;
+    background: #f5f7f9;
+    position: relative;
+    border-radius: 4px;
+    overflow: hidden;
+    height: 100vh;
+}
+.ivu-layout,.ivu-layout-sider{
+    height: 100%;
+}
+.layout-header-bar{
+    background: #fff;
+    box-shadow: 0 1px 1px rgba(0,0,0,.1);
+}
+.layout-logo-left{
+    width: 90%;
+    height: 30px;
+    background: #5b6270;
+    border-radius: 3px;
+    margin: 15px auto;
+}
+.menu-icon{
+    transition: all .3s;
+}
+.rotate-icon{
+    transform: rotate(-90deg);
+}
+.select-item{
+    width: 100px;
+    box-sizing: border-box;
+    display: inline-block;   
+    margin:  0 5px;
+}
+
+//高度100%;
+.im-height{
+    height: 100%;
+}
+
+//设置为滚动,并且隐藏滚动条
+.im-scorllY{
+    overflow-y:auto;
+    &::-webkit-scrollbar,&::-webkit-scrollbar-track,&::-webkit-scrollbar-thumb {
+          display: none;
+      }
+    // &:hover{
+    //     &::-webkit-scrollbar,&::-webkit-scrollbar-track,&::-webkit-scrollbar-thumb {
+    //         display: block;
+    //     }
+    // }  
+}
+
+//整体背景颜色灰色色调
+.im-container{
+    background-color: @container-bgc;       
+    height: calc(100% - 50px);
+}
+
+.ivu-col{
+    height: 100%;
+}
+
+
+/* 客服整体布局+菜单样式  end */
+
+
+
+/*  iview 表格样式 start */
+.ivu-table-header span{
+    font-weight: bold;
+    font-size: 1.1rem;
+  }
+
+/*  iview 表格样式 end */
+
+
+
+/*  管理界面样式  start        */
+.im-manager{
+    padding: 5px 5px  15px 15px;
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+    .im-manager-title{
+      margin-bottom: 10px;
+    }
+    .im-search-form{
+      margin-bottom: 15px;
+    }
+}    
+/*  管理界面样式  end        */    
